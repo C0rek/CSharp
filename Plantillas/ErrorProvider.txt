@@ -1,0 +1,63 @@
+-----------------------------------------------------------------------------------------------------------------
+ERROR PROVIDER SOLO LETRAS
+bool error = false;
+            foreach (char caracter in this.txtNombre.Text)
+            {
+                if (char.IsDigit(caracter))
+                {
+                    error = true;
+                    break;
+                }
+            }
+            if (error)
+            {
+                errorProvider1.SetError(txtNombre, "No se permiten digitos");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+-----------------------------------------------------------------------------------------------------------------
+ERROR PROVIDER SOLO NUMEROS
+bool error = false;
+            foreach (char caracter in this.txtNombre.Text)
+            {
+                if (char.IsLetter(caracter))
+                {
+                    error = true;
+                    break;
+                }
+            }
+            if (error)
+            {
+                errorProvider1.SetError(txtNombre, "No se permiten letras");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+-----------------------------------------------------------------------------------------------------------------
+ERROR PROVIDER NO HAY CARACTERES
+bool error = false;
+            foreach (char caracter in this.txtNumero1.Text)
+            {
+                if (char.IsSymbol(caracter) || (char.IsPunctuation(caracter)))
+                {
+                    if (Convert.ToChar(caracter) == 44)			// 44 es el ASCII de ,
+                    {
+                        error = false;
+                        break;
+                    }
+                    error = true;
+                    break;
+                }
+            }
+
+            if (error)
+            {
+                errorProvider1.SetError(txtNumero1, "No se permiten simbolos excepto (,)");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }

@@ -1,0 +1,3 @@
+CONTROLAR SI ESTA VACIO UN TXT
+
+	String.IsNullOrEmpty(txtNombre.Text)

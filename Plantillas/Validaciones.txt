@@ -1,0 +1,5 @@
+VALIDACIONES
+
+
+VALIDACION E-MAIL
+^[^@\s]+@[^@\s]+\.[^@\s]+$

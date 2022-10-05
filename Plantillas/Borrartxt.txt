@@ -1,0 +1,3 @@
+BORRAR TEXTBOXs
+textBox1.Clear();
+textBox1.Text="";
