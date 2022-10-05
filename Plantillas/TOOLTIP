@@ -1,0 +1,8 @@
+EJEMPLO DE TOOLTIP
+Agregar al proyecto el control TOOLTIP
+public PyFunciones()
+        {
+            InitializeComponent();
+            this.toolTip1.SetToolTip(this.txtNombre, "Ingrese su nombre");
+            this.toolTip1.SetToolTip(this.txtEdad, "Ingrese su edad");
+        }
