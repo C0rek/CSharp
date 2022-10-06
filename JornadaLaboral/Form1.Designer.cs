@@ -1,4 +1,4 @@
-﻿namespace Tp2_korek
+﻿namespace Tp2_C0rek
 {
     partial class Form1
     {
