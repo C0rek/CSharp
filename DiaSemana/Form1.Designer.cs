@@ -1,4 +1,4 @@
-﻿namespace tp2_c_TomasRodriguezZoni
+﻿namespace DiaSemana
 {
     partial class Form1
     {
