@@ -1,4 +1,4 @@
-﻿namespace Tp2_b_TomasRodriguezZoni
+﻿namespace FigurasGeometricas
 {
     partial class Form1
     {
